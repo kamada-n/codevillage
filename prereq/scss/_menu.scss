@@ -1,0 +1,60 @@
+main {
+    position: relative;
+} 
+
+
+#MENU {
+    display: flex;
+    justify-content: space-between;
+    height:800px;
+    width:83%;
+    margin: 0 auto;    
+    position: relative;
+    margin:0 auto;
+    padding-top:200px;
+    @include sp {
+        flex-direction: column;
+        padding:130px 30px 30px;
+        align-items: center;
+        height:2000px;
+    }
+    .title {
+        position: absolute;
+        top: 170px;
+        margin:0;
+        @include sp {
+            top:60px;
+            left:20px;
+            margin-left:0;
+            height:24px;
+            width:179px;
+        }
+    }
+}
+
+.menu-item__wrap {
+    width:274px;
+    height:568px;
+    img {
+        width:100%;
+        hight:50%;
+    }
+    .menu-title {
+        font-size: 3.0rem;
+        text-align: center;
+        padding:34px 0;
+    }
+    .menu-sentence, .price {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    .menu-sentence {
+        text-align: center;
+    }
+    .price {
+        text-align: right;
+        padding-top:34px;
+    }
+}
+
+
